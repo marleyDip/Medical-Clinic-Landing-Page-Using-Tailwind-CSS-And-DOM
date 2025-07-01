@@ -36,7 +36,7 @@
 
   <body>
     <!-- header start -->
-    <header class="py-8 lg:pt-6 lg:pb-14 bg-pink-200">
+    <header class="py-8 lg:pt-6 lg:pb-14">
       <div
         class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-8"
       >
@@ -47,6 +47,54 @@
           </a>
         </div>
         <!-- logo end -->
+
+        <!-- location, phone, btn & mobile navbar start -->
+        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+          <!-- location start-->
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+
+            <div class="text-secondary">Dhaka, Bangladesh</div>
+          </div>
+          <!-- location end -->
+
+          <!-- phone start -->
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <i class="ri-phone-fill text-2xl text-accent"></i>
+
+            <div class="text-secondary">+880 1689 190142</div>
+          </div>
+          <!-- phone end -->
+
+          <!-- btn start -->
+          <button
+            class="btn btn-sm btn-outline w-[240px] lg:w-[auto] mx-auto lg:mx-0"
+          >
+            Book Now
+          </button>
+          <!-- btn end -->
+
+          <!-- mobile nav start -->
+          <nav
+            class="mnav bg-pink-200 fixed w-[300px] h-screen top-0 left-0 shadow-2xl lg:hidden transition-all duration-300 z-20"
+          >
+            <!-- nav trigger btn start -->
+            <div
+              class="mnav__close-btn bg-primary w-8 h-8 relative right-full top-8 flex items-center justify-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
+            >
+              <i
+                class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"
+              ></i>
+            </div>
+            <!-- nav trigger btn end -->
+          </nav>
+          <!-- mobile nav end -->
+        </div>
+        <!-- location, phone, btn & mobile navbar end -->
       </div>
     </header>
     <!-- header end -->
