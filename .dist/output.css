@@ -583,3 +583,33 @@ video {
     max-width: 1330px;
   }
 }
+
+body {
+  font-family: Poppins;
+  font-size: 17px;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(128 128 128 / var(--tw-text-opacity, 1));
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 120%;
+  --tw-text-opacity: 1;
+  color: rgb(36 42 43 / var(--tw-text-opacity, 1));
+}
+
+.h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+@media (min-width: 1330px) {
+  .h1 {
+    font-size: 64px;
+  }
+}
