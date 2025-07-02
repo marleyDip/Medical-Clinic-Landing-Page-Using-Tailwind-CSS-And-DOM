@@ -48,7 +48,7 @@
         </div>
         <!-- logo end -->
 
-        <!-- location, phone, btn & mobile navbar start -->
+        <!-- location, phone, btn, mobile & desktop navbar start -->
         <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
           <!-- location start-->
           <div
@@ -78,23 +78,177 @@
           </button>
           <!-- btn end -->
 
+          <!-- here initial left-0 and next div left-full instead of -right-full -->
+
           <!-- mobile nav start -->
           <nav
-            class="mnav bg-pink-200 fixed w-[300px] h-screen top-0 left-0 shadow-2xl lg:hidden transition-all duration-300 z-20"
+            class="mnav bg-white fixed w-[300px] h-screen top-0 -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20"
           >
             <!-- nav trigger btn start -->
             <div
-              class="mnav__close-btn bg-primary w-8 h-8 relative right-full top-8 flex items-center justify-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
+              class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex items-center justify-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
             >
               <i
                 class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"
               ></i>
             </div>
             <!-- nav trigger btn end -->
+
+            <!-- logo, list, form start -->
+            <div class="px-12 flex flex-col gap-y-12 h-full">
+              <!-- logo start -->
+              <a href="#"
+                ><img src="assets/img/header/logo.svg" alt="Logo"
+              /></a>
+              <!-- logo end -->
+
+              <!-- list start -->
+              <ul class="flex flex-col gap-y-5">
+                <li>
+                  <a
+                    href=""
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Home</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href=""
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Doctors</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href=""
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Department</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href=""
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Services</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href=""
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Blog</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href=""
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <!-- list end -->
+
+              <!-- form start -->
+              <form class="relative flex gap-x-[10px]">
+                <label for="mnav-search-input">
+                  <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+
+                <input
+                  type="text"
+                  id="mnav-search-input"
+                  placeholder="search..."
+                  class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic"
+                />
+              </form>
+              <!-- form end -->
+            </div>
+            <!-- logo, list, form end -->
           </nav>
           <!-- mobile nav end -->
+
+          <!-- desktop navbar start -->
+          <nav
+            class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]"
+          >
+            <!-- list start -->
+            <ul class="flex gap-x-4">
+              <li>
+                <a
+                  href=""
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                  >Home</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                  >Doctors</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                  >Department</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                  >Services</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                  >Blog</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  class="text-secondary hover:text-accent transition-all duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- list end -->
+
+            <!-- form start -->
+            <from class="relative flex gap-x-[10px]">
+              <label
+                for="search-input"
+                class="flex justify-center items-center group"
+                ><i class="ri-search-line text-2xl text-accent"></i
+              ></label>
+
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search..."
+                class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150"
+              />
+            </from>
+            <!-- form end -->
+          </nav>
+          <!-- desktop navbar end -->
         </div>
-        <!-- location, phone, btn & mobile navbar end -->
+        <!-- location, phone, btn, mobile & desktop navbar end -->
       </div>
     </header>
     <!-- header end -->
