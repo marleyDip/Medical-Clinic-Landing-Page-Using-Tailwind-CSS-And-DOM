@@ -687,6 +687,46 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mb-\[2\] {
+  margin-bottom: 2;
+}
+
+.mb-\[26\] {
+  margin-bottom: 26;
+}
+
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -737,6 +777,22 @@ video {
 
 .min-h-\[288px\] {
   min-height: 288px;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
 }
 
 .w-8 {
@@ -800,6 +856,10 @@ video {
   max-width: 680px;
 }
 
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -838,6 +898,18 @@ video {
   gap: 1.25rem;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -872,6 +944,11 @@ video {
 .gap-x-14 {
   -moz-column-gap: 3.5rem;
        column-gap: 3.5rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .self-start {
@@ -1007,8 +1084,16 @@ video {
   padding-right: 1rem;
 }
 
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
@@ -1043,6 +1128,10 @@ video {
   font-size: 26pc;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1073,6 +1162,10 @@ video {
 
 .tracking-\[2\] {
   letter-spacing: 2;
+}
+
+.tracking-\[\] {
+  letter-spacing: ;
 }
 
 .text-\[\#9ab4b7\] {
@@ -1129,6 +1222,20 @@ video {
 
 .text-\[\#9a\] {
   color: #9a;
+}
+
+.text-accent-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(24 171 188 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#9\] {
+  color: #9;
+}
+
+.text-\[\#9ab\] {
+  --tw-text-opacity: 1;
+  color: rgb(153 170 187 / var(--tw-text-opacity, 1));
 }
 
 .shadow-2xl {
@@ -1491,6 +1598,10 @@ h6 {
 @media (min-width: 768px) {
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:text-justify {
