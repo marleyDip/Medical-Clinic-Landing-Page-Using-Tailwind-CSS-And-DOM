@@ -29,18 +29,44 @@ const swiper = new Swiper(".swiper", {
 });
 
 // faq & answer
+// const faqItems = document.querySelectorAll(".faq__item");
+
+// faqItems.forEach((item) => {
+//   const faqBtn = item.querySelector(".faq__btn");
+
+//   item.addEventListener("click", () => {
+//     const isOpen = item.classList.toggle("open");
+
+//     const iconClass = isOpen ? "ri-subtract-fill" : "ri-add-fill";
+
+//     const iconElement = faqBtn.querySelector("i");
+
+//     iconElement.classList = `${iconClass} text-2xl`
+//   });
+// });
+
 const faqItems = document.querySelectorAll(".faq__item");
 
 faqItems.forEach((item) => {
   const faqBtn = item.querySelector(".faq__btn");
 
   item.addEventListener("click", () => {
-    const isOpen = item.classList.toggle("open");
+    const isOpen = item.classList.contains("open");
 
-    const iconClass = isOpen ? "ri-subtract-fill" : "ri-add-fill";
+    // Close all items first
+    faqItems.forEach((otherItem) => {
+      otherItem.classList.remove("open");
+      const otherIcon = otherItem.querySelector(".faq__btn i");
+      if (otherIcon) {
+        otherIcon.classList = "ri-add-fill text-2xl";
+      }
+    });
 
-    const iconElement = faqBtn.querySelector("i");
-
-    iconElement.classList = `${iconClass} text-2xl`;
+    // If item was not open, open it now
+    if (!isOpen) {
+      item.classList.add("open");
+      const iconElement = faqBtn.querySelector("i");
+      iconElement.classList = "ri-subtract-fill text-2xl";
+    }
   });
 });
