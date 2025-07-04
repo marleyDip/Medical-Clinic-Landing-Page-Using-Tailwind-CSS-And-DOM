@@ -115,7 +115,7 @@ const sr = ScrollReveal({
   origin: "bottom",
   distance: "60px",
   duration: 3000,
-  //reset: true, // reset animation on scroll
+  reset: true, // reset animation on scroll
 });
 
 // hero section
