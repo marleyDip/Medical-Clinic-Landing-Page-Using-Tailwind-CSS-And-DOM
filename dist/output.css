@@ -695,6 +695,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
 .flex {
   display: flex;
 }
@@ -745,6 +749,18 @@ video {
 
 .min-h-\[400px\] {
   min-height: 400px;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[588\] {
+  min-height: 588;
+}
+
+.min-h-\[588px\] {
+  min-height: 588px;
 }
 
 .w-8 {
@@ -806,6 +822,18 @@ video {
 
 .max-w-\[98\%\] {
   max-width: 98%;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[555px\] {
+  max-width: 555px;
 }
 
 .flex-1 {
@@ -906,6 +934,10 @@ video {
   row-gap: 1.5rem;
 }
 
+.gap-y-\[30px\] {
+  row-gap: 30px;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -950,6 +982,20 @@ video {
   border-right-width: 1px;
 }
 
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[\#dcdcdc\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 220 220 / var(--tw-border-opacity, 1));
+}
+
+.border-t-accent-secondary {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(24 171 188 / var(--tw-border-opacity, 1));
+}
+
 .bg-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(232 240 241 / var(--tw-bg-opacity, 1));
@@ -977,12 +1023,20 @@ video {
   background-image: url(../../assets/img/testimonials/bg.svg);
 }
 
+.bg-departments {
+  background-image: url(../../assets/img/departments/bg.svg);
+}
+
 .bg-cover {
   background-size: cover;
 }
 
 .bg-right {
   background-position: right;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1032,6 +1086,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1062,10 +1121,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1086,10 +1141,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
 }
 
 .font-light {
@@ -1158,6 +1209,24 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#9a\] {
+  color: #9a;
+}
+
+.text-\[\#9a4b4c\] {
+  --tw-text-opacity: 1;
+  color: rgb(154 75 76 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#9ab\] {
+  --tw-text-opacity: 1;
+  color: rgb(153 170 187 / var(--tw-text-opacity, 1));
 }
 
 .shadow-2xl {
@@ -1626,6 +1695,22 @@ h6 {
     width: 48%;
   }
 
+  .xl\:w-\[\] {
+    width: ;
+  }
+
+  .xl\:w-\[3\] {
+    width: 3;
+  }
+
+  .xl\:w-\[310px\] {
+    width: 310px;
+  }
+
+  .xl\:w-\[640px\] {
+    width: 640px;
+  }
+
   .xl\:max-w-\[710px\] {
     max-width: 710px;
   }
@@ -1646,8 +1731,28 @@ h6 {
     align-items: flex-start;
   }
 
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:gap-y-\[4\] {
+    row-gap: 4;
+  }
+
+  .xl\:gap-y-\[40px\] {
+    row-gap: 40px;
+  }
+
   .xl\:border-r {
     border-right-width: 1px;
+  }
+
+  .xl\:border-b {
+    border-bottom-width: 1px;
+  }
+
+  .xl\:bg-auto {
+    background-size: auto;
   }
 
   .xl\:px-0 {
@@ -1670,6 +1775,26 @@ h6 {
 
   .xl\:pt-\[70px\] {
     padding-top: 70px;
+  }
+
+  .xl\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .xl\:pb-\[90px\] {
+    padding-bottom: 90px;
+  }
+
+  .xl\:pt-\[80px\] {
+    padding-top: 80px;
+  }
+
+  .xl\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:pt-3 {
+    padding-top: 0.75rem;
   }
 
   .xl\:text-left {
