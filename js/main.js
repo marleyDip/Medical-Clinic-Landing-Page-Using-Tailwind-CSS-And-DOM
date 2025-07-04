@@ -70,3 +70,39 @@ faqItems.forEach((item) => {
     }
   });
 });
+
+// format = numeric =  7; 2-digit = 07; short = Jul, long = July, narrow = J
+// date and year bengali = bn-bd; element = el
+// const fullDate = new Date().toLocaleDateString("en-us", {
+//   weekday: "long",
+//   month: "long",
+//   day: "numeric",
+//   year: "numeric",
+// });
+
+// document.querySelectorAll(".fullDate").forEach((element) => {
+//   element.textContent = fullDate;
+// });
+
+// const dateElement = document.querySelector("#year");
+// const currentDate = new Date();
+// const year = currentDate.getFullYear();
+// dateElement.textContent = year;
+
+// dynamically date and year that won't be changed
+document.querySelectorAll(".fullDate").forEach((el) => {
+  const rawDate = el.dataset.date;
+
+  if (rawDate) {
+    const dateObj = new Date(rawDate);
+
+    const formatted = dateObj.toLocaleDateString("en-us", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+
+    el.textContent = formatted;
+  }
+});
