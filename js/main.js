@@ -106,3 +106,6 @@ document.querySelectorAll(".fullDate").forEach((el) => {
     el.textContent = formatted;
   }
 });
+
+// footer year
+document.getElementById("year").textContent = new Date().getFullYear();
