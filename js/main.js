@@ -206,5 +206,5 @@ sr.reveal(".footer__copyright", {
   distance: "40px",
   duration: 600,
   delay: 900,
-  easing: "ease-out",
+  easing: "ease-in",
 });
